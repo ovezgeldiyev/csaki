@@ -1,0 +1,370 @@
+.company {
+  padding: 100px 0;
+  &__inner {
+    &-image {
+      position: relative;
+      width: 100%;
+      padding-bottom: 57%;
+      background: linear-gradient(180deg, #123075 0%, #092056 100%);
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+      }
+    }
+    &-content {
+      margin: 100px 0;
+      h2 {
+        margin-bottom: 18px;
+      }
+      p {
+        margin-bottom: 38px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 56px;
+    }
+    &-col {
+      width: calc(50% - 15px);
+      max-width: 534px;
+    }
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+    }
+    h3 {
+      margin-bottom: 16px;
+    }
+    .title {
+      margin-bottom: 45px;
+    }
+    .button {
+      width: 100%;
+      margin: 0 0 0 auto;
+    }
+  }
+}
+// 1380px
+@mixin company-xxxlg-xxxxlg {
+  .company {
+  }
+}
+// 1250px
+@mixin company-xlg-xxlg-extra {
+  .company {
+  }
+}
+// 1180px
+@mixin company-xlg-xxlg {
+  .company {
+  }
+}
+// 1024px
+@mixin company-lg-xlg {
+  .company {
+    padding: 70px 0;
+    &__inner {
+        &-content {
+            margin: 70px 0;
+        }
+    }
+  }
+}
+// 930px
+@mixin company-md-lg {
+  .company {
+  }
+}
+// 750px
+@mixin company-sm-md {
+  .company {
+    padding: 60px 0;
+    &__inner {
+        &-content {
+            margin: 40px 0;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+        &-row {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        &-col {
+            width: 100%;
+            max-width: unset;
+            margin-bottom: 20px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        .title {
+            margin-bottom: 30px;
+        }
+    }
+  }
+}
+// 650px
+@mixin company-sm-md-extra {
+  .company {
+  }
+}
+// 540px
+@mixin company-xsm-sm {
+  .company {
+    padding: 40px 0 50px;
+    &__inner {
+        &-content {
+            margin: 30px 0;
+            h2 {
+                margin-bottom: 10px;
+            }
+        }
+        .title {
+            margin-bottom: 20px;
+        }
+    }
+  }
+}
+// 440px
+@mixin company-xxsm-xsm {
+  .company {
+  }
+}
+.benefit {
+  padding: 155px 0 130px;
+  &__inner {
+    &-title {
+      margin-bottom: 38px;
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &Item {
+    width: calc(33.3% - 10px);
+    max-width: 360px;
+    padding: 35px 30px 28px;
+    background-color: $white;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    h5 {
+      margin-bottom: 24px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 24px;
+      &.sm {
+        line-height: 155%;
+      }
+    }
+    h6 {
+      margin: 0 0 0 auto;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      span {
+        width: 7px;
+        height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 16px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// 1380px
+@mixin benefit-xxxlg-xxxxlg {
+  .benefit {
+  }
+}
+// 1250px
+@mixin benefit-xlg-xxlg-extra {
+  .benefit {
+  }
+}
+// 1180px
+@mixin benefit-xlg-xxlg {
+  .benefit {
+    padding: 110px 0 100px;
+    &Item {
+        padding: 25px;
+    }
+  }
+}
+// 1024px
+@mixin benefit-lg-xlg {
+  .benefit {
+  }
+}
+// 930px
+@mixin benefit-md-lg {
+  .benefit {
+    padding: 80px 0;
+    &__inner{
+        &-title {
+            margin-bottom: 24px;
+        }
+    }
+    &Item {
+        width: calc(33.3% - 6px);
+        padding: 16px;
+        h5 {
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+    }
+  }
+}
+// 750px
+@mixin benefit-sm-md {
+  .benefit {
+    padding: 50px 0;
+    &__inner {
+        &-row {
+            flex-direction: column;
+        }
+    }
+    &Item {
+        width: 100%;
+        max-width: unset;
+        margin: 0 0 20px 0;
+        padding: 30px;
+        &:last-child {
+            margin: 0;
+        }
+        h5 {
+            display: block;
+        }
+        p {
+            display: block;
+        }
+    }
+  }
+}
+// 650px
+@mixin benefit-sm-md-extra {
+  .benefit {
+  }
+}
+// 540px
+@mixin benefit-xsm-sm {
+  .benefit {
+    &Item {
+        padding: 20px;
+    }
+  }
+}
+// 440px
+@mixin benefit-xxsm-xsm {
+  .benefit {
+  }
+}
+.program {
+  padding: 100px 0 85px;
+  &__inner {
+    &-content {
+      max-width: 752px;
+      margin: 0 auto;
+      h2 {
+        margin-bottom: 18px;
+      }
+    }
+    .title {
+      margin-bottom: 55px;
+    }
+  }
+}
+// 1380px
+@mixin program-xxxlg-xxxxlg {
+  .program {
+  }
+}
+// 1250px
+@mixin program-xlg-xxlg-extra {
+  .program {
+  }
+}
+// 1180px
+@mixin program-xlg-xxlg {
+  .program {
+  }
+}
+// 1024px
+@mixin program-lg-xlg {
+  .program {
+    padding: 70px 0;
+    &__inner {
+      .title {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+// 930px
+@mixin program-md-lg {
+  .program {
+  }
+}
+// 750px
+@mixin program-sm-md {
+  .program {
+    padding: 60px 0;
+  }
+}
+// 650px
+@mixin program-sm-md-extra {
+  .program {
+  }
+}
+// 540px
+@mixin program-xsm-sm {
+  .program {
+    padding: 40px 0;
+    &__inner {
+      &-content {
+        h2 {
+          margin-bottom: 10px;
+        }
+      }
+      .title {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+// 440px
+@mixin program-xxsm-xsm {
+  .program {
+  }
+}

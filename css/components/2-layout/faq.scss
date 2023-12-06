@@ -1,0 +1,235 @@
+.faq {
+  padding-bottom: 155px;
+  &__inner {
+    &-title {
+      margin-bottom: 70px;
+      &.center {
+        text-align: center;
+        margin-bottom: 42px;
+    }
+    }
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 70px;
+    }
+    &-col {
+      width: calc(50% - 15px);
+      max-width: 520px;
+    }
+    .button {
+        width: 100%;
+        margin: 0 auto;
+    }
+  }
+  &Item {
+    padding-left: 90px;
+    position: relative;
+    margin-bottom: 28px;
+    cursor: pointer;
+    &:hover {
+      .faqItem__icon {
+        background-color: $main;
+      }
+      a {
+        color: $main;
+        opacity: 1;
+      }
+    }
+    &:last-child {
+        margin: 0;
+    }
+    &__icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 66px;
+      height: 66px;
+      background-color: $primary;
+      border-radius: 50%;
+      box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.4);
+      transition: .3s ease;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        border-top: 2px solid $white;
+        border-right: 2px solid $white;
+        content: "";
+        transform: translate(-65%, -50%) rotate(45deg);
+        opacity: 1;
+      }
+    }
+    &__content {
+        padding-top: 10px;
+    }
+    h5 {
+        margin-bottom: 24px;
+        height: 56px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 28px;
+        a {
+            font-size: inherit;
+            line-height: inherit;
+            text-decoration: underline;
+            color: $primary;
+        }
+    }
+    p {
+        min-height: 146px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &.sm {
+            line-height: 156%;
+        }
+    }
+  }
+}
+// 1380px
+@mixin faq-xxxlg-xxxxlg {
+  .faq {
+  }
+}
+// 1250px
+@mixin faq-xlg-xxlg-extra {
+  .faq {
+  }
+}
+// 1180px
+@mixin faq-xlg-xxlg {
+  .faq {
+  }
+}
+// 1024px
+@mixin faq-lg-xlg {
+  .faq {
+    padding-bottom: 120px;
+    &__inner {
+      &-title {
+        margin-bottom: 40px;
+      }
+      &-col {
+        width: calc(50% - 8px);
+      }
+      &-row {
+        margin-bottom: 50px;
+      }
+    }
+    &Item {
+      padding-left: 60px;
+      margin-bottom: 20px;
+      &__icon {
+        width: 45px;
+        height: 45px;
+        &::before {
+          width: 10px;
+          height: 10px;
+        }
+      }
+      &__content {
+        padding: 0;
+      }
+      h5 {
+        margin-bottom: 16px;
+      }
+      p {
+        min-height: 114px;
+      }
+    }
+  }
+}
+// 930px
+@mixin faq-md-lg {
+  .faq {
+  }
+}
+// 750px
+@mixin faq-sm-md {
+  .faq {
+    padding-bottom: 80px;
+    &__inner {
+      &-row {
+        flex-direction: column;
+      }
+      &-title {
+        &.center {
+          margin-bottom: 30px;
+        }
+      }
+      &-col {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 30px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    &Item {
+      margin-bottom: 30px;
+      h5 {
+        display: block;
+        height: unset;
+      }
+      p {
+        display: block;
+        min-height: unset;
+      }
+    }
+  }
+}
+// 650px
+@mixin faq-sm-md-extra {
+  .faq {
+  }
+}
+// 540px
+@mixin faq-xsm-sm {
+  .faq {
+    padding-bottom: 50px;
+    &__inner {
+      &-title {
+        &.center {
+          margin-bottom: 20px;
+        }
+      }
+      &-col {
+        margin-bottom: 20px;
+      }
+      &-row {
+        margin-bottom: 35px;
+      }
+
+    }
+    &Item {
+      margin-bottom: 20px;
+      padding-left: 45px;
+      margin-bottom: 20px;
+      &__icon {
+        width: 35px;
+        height: 35px;
+        &::before {
+          width: 8px;
+          height: 8px;
+        }
+      }
+      h5 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+// 440px
+@mixin faq-xxsm-xsm {
+  .faq {
+  }
+}

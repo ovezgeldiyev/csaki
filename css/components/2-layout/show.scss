@@ -1,0 +1,241 @@
+.show {
+  padding: 100px 0 150px;
+  &__inner {
+    &-content {
+      margin-bottom: 100px;
+    }
+    &-title {
+    }
+    .title {
+      margin-bottom: 95px;
+    }
+    & > .button {
+      width: 100%;
+      max-width: 203px;
+      margin: 0 auto;
+    }
+  }
+  &Item {
+    padding: 15px 24px 20px 13px;
+    background-color: $white;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    &:hover {
+      opacity: 1;
+      img {
+        transform: scale(1.05);
+      }
+    }
+    &:last-child {
+      margin: 0;
+    }
+    &.big {
+      .showItem {
+        &__image {
+          width: calc(42% - 10px);
+          max-width: 458px;
+        }
+        &__content {
+          width: calc(58% - 10px);
+          max-width: 600px;
+          padding: 20px 0 10px;
+        }
+      }
+    }
+    &__image {
+      width: calc(22% - 10px);
+      max-width: 230px;
+      display: flex;
+      &-inner {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 65%;
+        position: relative;
+        box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        overflow: hidden;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include fullImage;
+          transition: .3s ease;
+        }
+      }
+    }
+    &__content {
+      width: calc(78% - 10px);
+      max-width: 833px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      &-foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+    h3 {
+      margin-bottom: 10px;
+    }
+    .button {
+      width: 100%;
+    }
+  }
+}
+// 1380px
+@mixin show-xxxlg-xxxxlg {
+  .show {
+  }
+}
+// 1250px
+@mixin show-xlg-xxlg-extra {
+  .show {
+  }
+}
+// 1180px
+@mixin show-xlg-xxlg {
+  .show {
+  }
+}
+// 1024px
+@mixin show-lg-xlg {
+  .show {
+    padding: 70px 0 110px;
+    &__inner {
+      &-content {
+        margin-bottom: 80px;
+      }
+      .title {
+        margin-bottom: 60px;
+      }
+    }
+    &Item {
+      padding: 15px 15px 15px 12px;
+    }
+  }
+}
+// 930px
+@mixin show-md-lg {
+  .show {
+  }
+}
+// 750px
+@mixin show-sm-md {
+  .show {
+    padding: 60px 0 90px;
+    &__inner {
+      &-content {
+        margin-bottom: 60px;
+      }
+      .title {
+        margin-bottom: 40px;
+      }
+    }
+    &Item {
+      margin-bottom: 18px;
+      &.big {
+        .showItem {
+          &__image {
+            width: calc(42% - 5px);
+          }
+          &__content {
+            width: calc(58% - 5px);
+            padding: 10px 0 5px;
+          }
+        }
+      }
+      &__image {
+        width: calc(28% - 5px);
+      }
+      &__content {
+        width: calc(72% - 5px);
+        padding-bottom: 5px;
+      }
+      h3 {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+// 650px
+@mixin show-sm-md-extra {
+  .show {
+    &Item {
+      flex-direction: column;
+      padding: 20px 20px 25px 20px;
+      &.big {
+        .showItem {
+          &__image {
+            width: 100%;
+            max-width: unset;
+          }
+          &__content {
+            width: 100%;
+            max-width: unset;
+            padding: 0;
+          }
+        }
+      }
+      &__image {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+      }
+      &__content {
+        width: 100%;
+        max-width: unset;
+        position: relative;
+        z-index: 2;
+      }
+      h3 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+// 540px
+@mixin show-xsm-sm {
+  .show {
+    padding: 40px 0 60px;
+    &__inner {
+      &-content {
+        margin-bottom: 40px;
+      }
+      .title {
+        margin-bottom: 24px;
+      }
+      & > .button {
+        max-width: 160px;
+      }
+    }
+    &Item {
+      padding: 10px 10px 12px 10px;
+      &__image {
+        margin-bottom: 15px;
+      }
+      .button {
+        max-width: 156px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        &.lg {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+// 440px
+@mixin show-xxsm-xsm {
+  .show {
+  }
+}

@@ -1,0 +1,147 @@
+.contact {
+  padding: 100px 0 180px;
+  &__inner {
+    &-form {
+      max-width: 474px;
+      margin: 0 auto;
+      h2 {
+        margin-bottom: 33px;
+        text-align: center;
+      }
+      .button {
+        width: 100%;
+        margin: 50px auto 0;
+      }
+    }
+    &-top {
+      border-bottom: 2px solid #595f6f;
+      padding-bottom: 80px;
+      margin-bottom: 80px;
+      .title {
+        margin-bottom: 30px;
+        h1 {
+          margin: 0;
+        }
+      }
+    }
+    &-info {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &-login {
+      max-width: 474px;
+      margin: 0 auto;
+      h4 {
+        text-align: center;
+        margin-bottom: 18px;
+        color: $primary;
+      }
+      p {
+        text-align: center;
+        a {
+          text-decoration: underline;
+          &:hover {
+            opacity: 1;
+            color: $primary;
+          }
+        }
+      }
+      .button {
+        width: 100%;
+        margin: 18px auto 0;
+      }
+    }
+    .title {
+      margin-bottom: 35px;
+    }
+    .input {
+      margin-bottom: 30px;
+      &.big {
+        margin-bottom: 13px;
+      }
+      &:last-of-type {
+        margin-bottom: 22px;
+      }
+    }
+    .check {
+      margin-bottom: 10px;
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+}
+// 1380px
+@mixin contact-xxxlg-xxxxlg {
+  .contact {
+  }
+}
+// 1250px
+@mixin contact-xlg-xxlg-extra {
+  .contact {
+  }
+}
+// 1180px
+@mixin contact-xlg-xxlg {
+  .contact {
+  }
+}
+// 1024px
+@mixin contact-lg-xlg {
+  .contact {
+    padding: 70px 0 120px;
+    &__inner {
+      &-top {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-width: 1px;
+      }
+    }
+  }
+}
+// 930px
+@mixin contact-md-lg {
+  .contact {
+  }
+}
+// 750px
+@mixin contact-sm-md {
+  .contact {
+  }
+}
+// 650px
+@mixin contact-sm-md-extra {
+  .contact {
+  }
+}
+// 540px
+@mixin contact-xsm-sm {
+  .contact {
+    padding: 40px 0 70px;
+    &__inner {
+      &-top {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+      }
+      &-form {
+        .button {
+          margin: 24px auto 0;
+        }
+        h2 {
+          margin-bottom: 20px;
+        }
+      }
+      .title {
+        margin-bottom: 20px;
+      }
+      .input {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+// 440px
+@mixin contact-xxsm-xsm {
+  .contact {
+  }
+}

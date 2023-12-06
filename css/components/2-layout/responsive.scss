@@ -1,0 +1,444 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  .search {
+    &Menu {
+      padding: 0 40px;
+      &.active {
+        padding: 34px 40px;
+      }
+      &__close {
+        left: calc(100% + 30px);
+      }
+    }
+  }
+  @include hero-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1,
+  h2 {
+    font-size: 40px;
+    &.sm {
+      font-size: 36px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+    &.big {
+      font-size: 34px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 22px;
+    &.sm {
+      font-size: 16px;
+    }
+  }
+  p {
+    font-size: 18px;
+    &.em {
+      font-size: 24px;
+    }
+    &.lg {
+      font-size: 22px;
+    }
+    &.sm {
+      font-size: 16px;
+      letter-spacing: -0.2px;
+    }
+  }
+  .title {
+    h1,
+    h2 {
+      span {
+        width: 50px;
+        margin: 0 0 9px 10px;
+      }
+    }
+  }
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include action-xlg-xxlg;
+  @include partner-xlg-xxlg;
+  @include about-xlg-xxlg;
+  @include benefit-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .tv {
+    margin: 0 20px;
+    &::before {
+      top: calc(100% + 12px);
+    }
+  }
+  .user {
+    &::before {
+      top: calc(100% + 18px);
+    }
+  }
+  .search {
+    &::before {
+      top: calc(100% + 18px);
+    }
+    &Menu {
+      padding: 0 30px;
+      &.active {
+        padding: 20px 30px;
+      }
+      &__close {
+        width: 20px;
+        height: 20px;
+        left: calc(100% + 15px);
+      }
+    }
+  }
+  .title {
+    p {
+      margin-bottom: 35px;
+    }
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include info-lg-xlg;
+  @include company-lg-xlg;
+  @include faq-lg-xlg;
+  @include contact-lg-xlg;
+  @include program-lg-xlg;
+  @include show-lg-xlg;
+  @include events-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1,
+  h2 {
+    font-size: 35px;
+    &.sm {
+      font-size: 30px;
+    }
+  }
+  h3 {
+    font-size: 26px;
+    &.big {
+      font-size: 30px;
+    }
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 20px;
+    &.sm {
+      font-size: 15px;
+    }
+  }
+  h6 {
+    font-size: 11px;
+  }
+  p {
+    font-size: 16px;
+    &.em {
+      font-size: 20px;
+    }
+    &.lg {
+      font-size: 20px;
+    }
+    &.sm {
+      font-size: 14px;
+      letter-spacing: -0.2px;
+    }
+    &.xsm {
+      font-size: 12px;
+    }
+  }
+  .input {
+    &.sm {
+      input {
+        padding: 16px 20px;
+      }
+    }
+    &.big {
+      input {
+        padding: 16px 20px 16px 130px;
+      }
+    }
+    span {
+      font-size: 12px;
+      left: 20px;
+    }
+    input {
+      font-size: 12px;
+      padding: 16px 20px 16px 90px;
+    }
+    textarea {
+      font-size: 12px;
+      padding: 16px 20px;
+    }
+    select {
+      font-size: 12px;
+      padding: 16px 20px;
+    }
+    button {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .button {
+    padding: 14px 35px 14px 15px;
+    font-size: 14px;
+    max-width: 180px;
+    &.uniq {
+      padding: 14px 15px;
+    }
+    &::before {
+      width: 8px;
+      height: 8px;
+      right: 15px;
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      right: 14px;
+    }
+  }
+  @include hero-md-lg;
+  @include action-md-lg;
+  @include partner-md-lg;
+  @include about-md-lg;
+  @include benefit-md-lg;
+  @include footer-md-lg;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  .title {
+    h1,
+    h2 {
+      margin-bottom: 12px;
+      span {
+        width: 35px;
+        margin: 0 0 7px 7px;
+      }
+    }
+    h6 {
+      margin-bottom: 14px;
+    }
+    p {
+      margin-bottom: 24px;
+    }
+  }
+  .modal {
+    &__inner {
+      padding: 10px;
+    }
+  }
+  @include hero-sm-md;
+  @include info-sm-md;
+  @include action-sm-md;
+  @include partner-sm-md;
+  @include about-sm-md;
+  @include company-sm-md;
+  @include benefit-sm-md;
+  @include faq-sm-md;
+  @include program-sm-md;
+  @include show-sm-md;
+  @include events-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include hero-sm-md-extra;
+  @include info-sm-md-extra;
+  @include about-sm-md-extra;
+  @include show-sm-md-extra;
+  @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  h1,
+  h2 {
+    font-size: 30px;
+    &.sm {
+      font-size: 25px;
+    }
+  }
+  h3 {
+    font-size: 22px;
+    &.big {
+      font-size: 24px;
+    }
+  }
+  p {
+    font-size: 14px;
+    &.em {
+      font-size: 16px;
+    }
+    &.lg {
+      font-size: 18px;
+    }
+    &.sm {
+      font-size: 14px;
+      letter-spacing: -0.1px;
+    }
+    &.xsm {
+      font-size: 12px;
+    }
+  }
+  .button {
+    font-size: 13px;
+    
+    svg {
+      width: 22px;
+      height: 22px;
+      right: 12px;
+    }
+  }
+  .tv {
+    width: 26px;
+    height: 26px;
+    margin: 0 20px;
+    &::before {
+      top: calc(100% + 14px);
+      height: 4px;
+    }
+  }
+  .user {
+    width: 18px;
+    &::before {
+      top: calc(100% + 16px);
+      height: 4px;
+    }
+    &Menu {
+      &.active {
+        padding: 20px 0;
+      }
+      &__inner {
+        h4 {
+          margin-bottom: 10px;
+        }
+        p {
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+  .search {
+    width: 21px;
+    &::before {
+      top: calc(100% + 16px);
+      height: 4px;
+    }
+    &Menu {
+      padding: 0;
+      .auto__container {
+        position: static;
+      }
+      &.active {
+        padding: 20px 0;
+      }
+      &__inner {
+        position: static;
+      }
+      &__close {
+        display: none;
+        width: 16px;
+        height: 16px;
+        left: unset;
+        right: 20px;
+        top: 20px;
+        transform: translate(0);
+      }
+    }
+  }
+  .input {
+    &.sm {
+      input {
+        padding: 13px 16px;
+      }
+    }
+    &.big {
+      input {
+        padding: 13px 16px 13px 130px;
+      }
+    }
+    span {
+      left: 16px;
+    }
+    button {
+      width: 17px;
+      height: 17px;
+      right: 14px;
+    }
+    textarea {
+      padding: 13px 16px;
+    }
+    select {
+      padding: 13px 16px;
+    }
+  }
+  .check {
+    &__box {
+      margin-right: 10px;
+    }
+  }
+  .title {
+    h1,
+    h2 {
+      margin-bottom: 8px;
+    }
+    h6 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .modal {
+    padding: 20px 10px;
+    &__inner {
+      padding: 6px;
+      border-radius: 3px;
+    }
+  }
+  .main {
+    padding-top: 62px;
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include hero-xsm-sm;
+  @include partner-xsm-sm;
+  @include company-xsm-sm;
+  @include benefit-xsm-sm;
+  @include faq-xsm-sm;
+  @include contact-xsm-sm;
+  @include program-xsm-sm;
+  @include show-xsm-sm;
+  @include events-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include hero-xxxsm-xxsm;
+}
